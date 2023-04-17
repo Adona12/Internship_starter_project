@@ -7,11 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        body:['Montserrat']
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors:{
+        primary:"#264FAD",
+        text :"#565656"
+      },
+      fontSize:{
+        links: '20px'
+      }
     },
   },
   plugins: [],
