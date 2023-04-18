@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .nav{
-  @apply font-semibold text-links text-sm px-2;
+  @apply font-semibold text-links text-sm mx-0 md:mx-2 lg:mx-6 my-6 sm:my-4 md:my-0 lg:my-0;
 }
 .btn{
   @apply rounded inline-block bg-primary text-white  font-bold text-sm;
