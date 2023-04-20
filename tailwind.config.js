@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        body:['Montserrat']
+        // body:['Montserrat']
+        body:['Poppins']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -17,10 +18,17 @@ module.exports = {
       },
       colors:{
         primary:"#264FAD",
-        text :"#565656"
+        text :"#565656",
+        cardbg:"#F6F6FC"
       },
       fontSize:{
         links: '20px'
+      },
+      height:{
+        220:'550px'
+      },
+      width:{
+        220:'600px'
       }
     },
   },

@@ -8,10 +8,11 @@ import {
   FaInstagram,
   FaCopyright,
 } from "react-icons/fa";
+import {PrimaryButton} from "../common/Button";
 
 function Footer() {
   return (
-    <>
+    <div className="mx-10">
       <div className="grid md:grid-cols-6 mx-6 justify-center md:justify-start">
         <div className="self-center">
           <img src="footer.png" alt="" />
@@ -21,7 +22,7 @@ function Footer() {
             Get involved in improving tech <br />
             education in africa
           </div>
-          <div className="btn px-12 py-3 text-sm mb-4 md:m-0">Support US</div>
+          <PrimaryButton  content="Support Us" addClass=""/>
         </div>
 
         <div>
@@ -75,7 +76,7 @@ function Footer() {
           <FaInstagram className="ml-8 text-gray-400" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

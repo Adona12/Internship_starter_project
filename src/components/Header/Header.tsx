@@ -1,43 +1,36 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Tab from "./Tab";
+
 import { useState } from "react";
+import {PrimaryButton} from "../common/Button";
 
 function Header() {
   const [nav, setNav] = useState(false);
   return (
-    <div className="relative">
+    <div className="relative mx-10">
       <div className=" sm:flex justify-between items-center pt-6">
         {/* <Image src="logo.png" alt="" width="2" height="3"></Image> */}
         <img src="logo.png" />
-        <ul className={`sm:flex  mt-6 mb-2 md:mt-0 md:mb-2 items-baseline ${nav ? "block" : "hidden"}`}>
-          <li>
-            <Link href="/" className="nav \">
-              Home
-            </Link>
-          </li>
-          <Link href="/teams" className="nav">
-            Teams
-          </Link>
-          <li>
-            <Link href="/success" className="nav">
-              Success Stories
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="nav">
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link href="/involved" className="nav">
-              Get Involved
-            </Link>
-          </li>
+        <ul
+          className={`sm:flex  mt-6 mb-2 md:mt-0 md:mb-2 items-baseline ${
+            nav ? "block" : "hidden"
+          }`}
+        >
+          <Tab link="/" content="Home" />
+          <Tab link="/teams" content="Teams" />
+          <Tab link="/success" content="Success Stories" />
+          <Tab link="/about" content="About Us" />
+          <Tab link="/involved" content="   Get Involved" />
         </ul>
-        <div className={`sm:inline-block items-baseline ${nav ? "block" : "hidden"}`}>
+        <div
+          className={`sm:inline-block items-baseline ${
+            nav ? "block" : "hidden"
+          }`}
+        >
           <span className="font-bold text-sm">Login</span>
-          <div className="btn ml-4 px-3 py-1">Donate</div>
+          <PrimaryButton  content="Donate" addClass="ml-3"/>
         </div>
       </div>
       <div className="absolute right-2 top-7 sm:hidden">
@@ -65,7 +58,7 @@ function Header() {
           </svg>
         </button>
       </div>
-    </ div>
+    </div>
   );
 }
 
