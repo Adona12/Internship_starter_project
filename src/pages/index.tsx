@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div className="mx-0 mt-20  md:mx-10">
         <div className="flex flex-col-reverse md:flex-row  mx-10 justify-between">
-          <div>
+          <div className="text-center md:text-left">
             <div className="font-extrabold text-6xl mb-6 text-black">
               Africa to <span className="text-primary">Silicon Valley</span>
             </div>
@@ -80,14 +80,42 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="mt-10 h-96 relative">
+       <div className="mt-10 h-80 relative">
         <div className="h-72 bg-gradient-to-r from-primary from-0% to-[#019CFA] to-100%"></div>
-        <img className="h-80  absolute top-0  left-80 z-1" src="africa.png" />
-        <div className="absolute top-1/3 left-96 z-20 text-white">
+        <img className="h-80  absolute top-0  left-1/2 z-1" src="africa.png" />
+        <div className="absolute top-1/3 left-1/2 z-20 text-white">
           Help us sustain our mission
-          <button className="block p-3 font-bold rounded bg-white text-primary">Support Us</button>
-          </div>
+          <button className="block p-3 font-bold rounded bg-white text-primary">
+            Support Us
+          </button>
+        </div>
       </div>
+       <div>
+       <div className="font-bold text-4xl mt-5  mb-5 text-black text-center">
+          Impact Stories
+        </div>
+        <div className="mx-14 mt-20 md:grid grid-cols-2 justify-center md:justify-between ">
+          <div className="order-last md:order-first ">
+            <span className="text-black text-lg">Abel Tsegaye</span>
+            <span className="block text-sm">Software Engineer at Google</span>
+            <p className="mt-8 text-sm">
+              “ When I joined A2SV in 2019, I found the concept of data
+              structures and algorithms quite challenging. A2SV's smooth
+              learning process and dedicated team molded me to see the peak of
+              my abilities. Through A2SV's effective education and continual
+              support, I passed Google's internship interviews and attended a
+              summer internship at Google in Amsterdam. However, the A2SV
+              program and training is beyond technical education and interview
+              preparation. As an A2SVian, I also learned the values of putting
+              humanity first, giving back to our community, and utilizing
+              teamwork with my colleagues, which I can now consider my big
+              family. After completing three remarkable months at Google, I was
+              offered a full-time position at Google's London office for 2022. “
+            </p>
+          </div>
+          <img className="h-[500px] justify-self-center" src="impact.png" alt="" />
+        </div>
+      </div> 
     </div>
   );
 }
